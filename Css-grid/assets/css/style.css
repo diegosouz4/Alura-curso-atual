@@ -1,14 +1,26 @@
 .app {
-    background: #f1f1f1;
-    display: grid;  
+    background: var(--cinza-100);
+    display: grid; 
+    grid-template-areas: 
+    "cabecalho" 
+    "conteudo" 
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .cabecalho {
+    background-color: var(--verde-);
+    grid-area: cabecalho;
 }
- 
+
 .conteudo {
+    background-color: var(--vermelho-);
+    grid-area: conteudo;
 }
 
 .rodape {
+    background-color: var(--azul-);
+    grid-area: rodape;
 }
