@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de Regex</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- <input pattern="[0-9]*"> -->
+      <input pattern="[@gmail.com$]" />
+      <input type="submit" value="Enviar dados" />
+    </form>
+    <script>
+      //   const alvo = "11a22b33c44d";
+      // let exp = new RegExp('(\\d\\d)(\\w)', 'g');
+      //   let exp = /(\d\d)(\w)/g; //forma mais vista.
+      //   let resultado = null;
+      //   while (resultado = exp.exec(alvo)) {
+      //     console.log(resultado);
+      //     console.log(exp.lastIndex);
+      //   }
+
+      //------------------Alterando o formato de uma data
+
+      let data = "2007-12-31";
+      const expData = /-/g;
+      console.log(`Data antes do regex é: ${data}`);
+      data = data.replace(expData, "/");
+      console.log(`Data depois do regex é: ${data}`);
+
+      //------------------O poder do split
+      let arquivo = "100,200-150,200;20";
+      const expArq = /[,;-]/;
+      let valores = arquivo.split(expArq);
+      console.log(`O resultado do split é :${valores}`);
+
+      //------------------O retorno de match
+      let codigo = "A121B12112C12212F12G01";
+      const expCodigo = /[A-Za-z]\d+/g;
+      let codigoExtraido = codigo.match(expCodigo);
+      console.log(`O retorno do match é : ${codigoExtraido}`);
+
+      //------------------Limpando CPF
+      let cpf = "123.321.654-12";
+      const expCPF = /[.-]/g;
+      console.log(`CPF antigo ${cpf}`);
+      cpf = cpf.replace(expCPF, "");
+      console.log(`CPF novo ${cpf}`);
+    </script>
+  </body>
+</html>

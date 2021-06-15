@@ -1,0 +1,62 @@
+<h1>Expressões Regex</h1>
+
+<h2>Classes de charactéres</h2>
+<ul>
+  <li><b>[123]</b> - Limita para números de 1, ou 2, ou 3;</li>
+  <li><b>[1-3]</b> - Limita para números de 1 até 3;</li>
+  <li><b>[A-Z]</b> - Expressão que busca qualquer letra maiúscula;</li>
+  <li><b>[a-z]</b> - Expressão que busca qualquer letra minúscula;</li>
+  <li><b>\w</b> - Atalho das expressões [A-Za-z0-9_];</li>
+  <li><b>\d</b> - Atalho da expressão [0-9] que pega qualquer número;</li>
+  <li>
+    <b>\s</b> - Expressão de "White space" ou espaço em branco e também é um
+    atalho das expressões [ /t/r/n/f];
+  </li>
+  <li><b>.</b> - Expressão usada para representar qualquer valor;</li>
+</ul>
+
+<h2>Quantifier</h2>
+<ul>
+  <li><b>?</b> - Expressão usada como opcional, pode ou não aparecer;</li>
+  <li><b>*</b> - Expressão usada para zero ou mais vezes;</li>
+  <li><b>+</b> - Expressão usada para uma ou mais vezes;</li>
+  <li><b>{n}</b> - Expressão usada n vezes;</li>
+  <li><b>{n,}</b> - Expressão usada para no mínimo n vezes;</li>
+  <li>
+    <b>{n,m}</b> - Expressão usada para no mínimo n+1 vezes e no máximo m vezes;
+  </li>
+  <li>
+    <b>{^,}</b> - Expressão usada para pegar qualquer informação que não seja
+    uma vírgula;
+  </li>
+  <li>
+    Para limitar um Quantifier use o "?" depois da expressão. Exemplo: Alura -
+    regex: [a-z]+ = 1 match já ao utilizar o "?" Alura - regex: [a-z]+? = 5
+    match. Ele irá executar letra por letra;
+  </li>
+</ul>
+
+<h2>Âncoras</h2>
+<ul>
+  <li>
+    <b>\b informação \b</b> - Expressão word boundary, ele pega o até o limite
+    da informação passada;
+  </li>
+  <li>
+    <b>^</b> - Corresponde ao início do texto. Se a flag multilinhas é setada
+    para true, também se aplica imediatamente após um caractere de quebra de
+    linha;
+  </li>
+  <li>
+    <b>$</b> - Corresponde ao final do texto. Se a flag multilinhas é setada
+    para true, também se aplica imediatamente antes de um caractere de quebra de
+    linha;
+  </li>
+</ul>
+
+<h2>Grupos</h2>
+<ul>
+  <li><b>(\w+)</b> - Grupo de wod chars;</li>
+  <li><b>(\w+)?</b> - Grupo opcional;</li>
+  <li><b>(?:\w+)</b> - non-capturing group;</li>
+</ul>
