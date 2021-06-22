@@ -8,8 +8,5 @@ Projetos desenvolvidos durante os cursos.
    * [Curso Js na Web: Armazenando dados no Navegador](https://github.com/diegosouz4/Alura-curso-atual/tree/master/JS%20na%20Web%20-%20Armazenando%20dados%20no%20navgador)
    * [Expressões regulares: Capturando textos de forma mágica](https://github.com/diegosouz4/Alura-curso-atual/tree/master/Express%C3%B5es%20regulares)
    * [JS na Web: CRUD com Javascript assícrono](https://github.com/diegosouz4/Alura-curso-atual/tree/master/JS%20na%20Web%20-%20CRUD%20com%20Javascript)
-<<<<<<< HEAD
    * [JS na Web: Validação de Formulários e HTML5]()
-=======
->>>>>>> e55f2f371736aef6b5e87f88d226b1399beb7e7b
 <!--te-->
